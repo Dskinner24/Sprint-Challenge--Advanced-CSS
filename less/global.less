@@ -7,9 +7,20 @@ html {
   font-size: 62.5%;
 }
 
+@keyframes bgcolor {
+  0% {background-color: white;}
+  25% {background-color: lightskyblue;}
+  50% {background-color: aqua}
+  75% {background-color: darkturquoise;}
+  100% {background-color: deepskyblue;}
+}
+
 html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
+  animation-name: bgcolor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 h1, h2, h3, h4, h5 {
